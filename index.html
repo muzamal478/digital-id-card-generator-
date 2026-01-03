@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Digital Institute ID Card Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Digital Institute ID Card Generator</h1>
+  </header>
+
+  <main>
+    <section class="form-section" aria-label="ID Card Input Form">
+      <form id="idForm" novalidate>
+        <!-- Institute Details -->
+        <div class="form-group">
+          <label for="instituteName">Institute Name</label>
+          <input type="text" id="instituteName" name="instituteName" placeholder="Enter Institute Name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="instituteLogo">Institute Logo</label>
+          <input type="file" id="instituteLogo" name="instituteLogo" accept="image/*" />
+        </div>
+
+        <!-- Personal Details -->
+        <div class="form-group">
+          <label for="userPhoto">Upload Your Photo</label>
+          <input type="file" id="userPhoto" name="userPhoto" accept="image/*" />
+        </div>
+
+        <div class="form-group">
+          <label for="fullName">Your Name</label>
+          <input type="text" id="fullName" name="fullName" placeholder="Enter Your Name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="position">Position</label>
+          <input type="text" id="position" name="position" placeholder="Your Position" required />
+        </div>
+
+        <div class="form-group">
+          <label for="idNumber">ID Number</label>
+          <input type="text" id="idNumber" name="idNumber" placeholder="Enter ID Number" required />
+        </div>
+
+        <div class="form-group">
+          <label for="courseDept">Course/Department</label>
+          <input type="text" id="courseDept" name="courseDept" placeholder="Course or Department" required />
+        </div>
+
+        <div class="form-group">
+          <label for="issueDate">Issue Date</label>
+          <input type="date" id="issueDate" name="issueDate" required />
+        </div>
+
+        <div class="form-group">
+          <label for="expireDate">Expire Date</label>
+          <input type="date" id="expireDate" name="expireDate" required />
+        </div>
+
+        <!-- Customization -->
+        <div class="form-group">
+          <label for="fontFamily">Font Family</label>
+          <select id="fontFamily" name="fontFamily" aria-label="Select Font Family">
+            <option value="'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" selected>Segoe UI</option>
+            <option value="'Roboto', sans-serif">Roboto</option>
+            <option value="'Open Sans', sans-serif">Open Sans</option>
+            <option value="'Lato', sans-serif">Lato</option>
+            <option value="'Montserrat', sans-serif">Montserrat</option>
+            <option value="'Arial', sans-serif">Arial</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="colorStart">Gradient Start Color</label>
+          <input type="color" id="colorStart" name="colorStart" value="#ffffff" aria-label="Select Gradient Start Color" />
+        </div>
+
+        <div class="form-group">
+          <label for="colorEnd">Gradient End Color</label>
+          <input type="color" id="colorEnd" name="colorEnd" value="#ffffff" aria-label="Select Gradient End Color" />
+        </div>
+
+        <div class="form-group">
+          <label for="textColorOverride">Text Color Override (Optional)</label>
+          <input type="color" id="textColorOverride" name="textColorOverride" aria-label="Select Text Color Override" />
+        </div>
+
+        <button type="button" id="downloadBtn" aria-label="Download ID Card">Download ID Card</button>
+      </form>
+    </section>
+
+    <section class="card-preview" aria-label="ID Card Preview">
+      <div id="idCard" class="id-card" role="region" aria-live="polite">
+        <header class="card-header">
+          <img src="assets/logo.png" alt="Institute Logo" id="cardLogo" />
+          <h2 id="cardInstituteName">Institute Name</h2>
+        </header>
+
+        <div class="card-body">
+          <div class="photo-signature">
+            <img src="assets/user-placeholder.png" alt="User Photo" id="cardPhoto" />
+            <div class="signature-container">
+              <img src="assets/signature.png" alt="Authorized Signature" id="cardSignature" />
+              <p>Authorized Signature</p>
+            </div>
+          </div>
+
+          <div class="card-info" id="cardInfo">
+            <p><strong>Name:</strong> <span id="cardName">Your Name</span></p>
+            <p><strong>Position:</strong> <span id="cardPosition">Position</span></p>
+            <p><strong>ID No:</strong> <span id="cardID">0000</span></p>
+            <p><strong>Course/Dept:</strong> <span id="cardCourse">Course/Department</span></p>
+            <p><strong>Issue Date:</strong> <span id="cardIssue">dd-mm-yyyy</span></p>
+            <p><strong>Expire Date:</strong> <span id="cardExpire">dd-mm-yyyy</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Digital Institute ID Card Generator</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

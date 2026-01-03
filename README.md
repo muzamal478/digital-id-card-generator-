@@ -37,9 +37,10 @@ This project is fully frontend-based (HTML, CSS, JS) and responsive for all devi
 - logo.png → Institute logo placeholder
 - user-placeholder.png → User photo placeholder
 - signature.png → Authorized signature placeholder
-- Open index.html in any modern browser.
-- Fill the form fields to generate the ID card.
-- Click Download ID Card to save the card as PNG.
+
+2. Open index.html in any modern browser.
+3. Fill the form fields to generate the ID card.
+4. Click Download ID Card to save the card as PNG.
 
 ## Use Cases
 - Educational institutes generating student/faculty ID cards

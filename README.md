@@ -1,45 +1,52 @@
 # Digital Institute ID Card Generator
 
 ## Project Description
-A modern, fully customizable web application to create professional digital institute ID cards. Users can input personal and institute details, upload photos and logos, select colors and fonts, preview the card live, and download it as a PNG image.
+A modern, fully customizable web application to create professional digital institute ID cards. Users can input institute and personal details, upload images (logo, photo, signature), customize colors and fonts, and instantly preview the ID card in real-time. The card can be downloaded as a PNG image.  
 
-## Features
-- Horizontal, wide form input for user-friendly data entry
-- Upload institute logo, user photo, and authorized signature
-- Real-time live preview of the ID card
-- Gradient background with customizable start and end colors
-- Automatic text color adjustment for readability with optional override
-- Font family selection for the card text
-- Download the ID card as a PNG image (frontend only, no backend)
-- Responsive and accessible UI with modern design
-
-## Technologies Used
-- HTML5
-- CSS3 (Flexbox, responsive design)
-- Vanilla JavaScript (ES6+)
-- [html2canvas](https://html2canvas.hertzen.com/) library for client-side image generation
-
-## How to Run
-1. Clone or download the repository.
-2. Ensure the `/assets/` folder contains:
-   - `logo.png` (institute logo placeholder)
-   - `user-placeholder.png` (user photo placeholder)
-   - `signature.png` (authorized signature placeholder)
-3. Open `index.html` in any modern web browser (Chrome, Firefox, Edge).
-4. Fill out the form to customize your ID card.
-5. Click "Download ID Card" to save the card as a PNG image.
-
-## Use Cases
-- Educational institutes generating student/faculty ID cards digitally
-- Training centers issuing course completion ID cards
-- Any organization requiring a professional, printable ID card generator without backend
-
-## Author
-**Muzamal Asghar**  
-Software Engineer | Frontend Developer | UI/UX Designer
+This project is fully frontend-based (HTML, CSS, JS) and responsive for all devices.
 
 ---
 
-**Replace placeholder images in the assets folder with your own to customize further.**
+## Features
+- Horizontal wide form for data input
+- Upload institute logo, user photo, and authorized signature
+- Live ID card preview as data is entered
+- Gradient background with customizable start and end colors
+- Automatic text color adjustment for readability (optional override)
+- Dynamic font family selection
+- Download ID card as PNG (frontend-only)
+- Fully responsive and professional UI
 
+---
 
+## Technologies Used
+- HTML5
+- CSS3 (Flexbox)
+- Vanilla JavaScript
+- [html2canvas](https://html2canvas.hertzen.com/) for PNG export
+
+---
+
+## How to Run
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/muzamal478/digital-id-card-generator.git
+   ```
+## Ensure /assets/ folder contains:
+
+- logo.png → Institute logo placeholder
+- user-placeholder.png → User photo placeholder
+- signature.png → Authorized signature placeholder
+- Open index.html in any modern browser.
+- Fill the form fields to generate the ID card.
+- Click Download ID Card to save the card as PNG.
+
+## Use Cases
+- Educational institutes generating student/faculty ID cards
+- Training centers issuing course completion ID cards
+- Organizations issuing digital ID cards
+
+## Author
+- Name: Muzamil Asghar
+- GitHub: https://github.com/muzamal478
+- LinkedIn: https://www.linkedin.com/in/muzamilasgharofficial/

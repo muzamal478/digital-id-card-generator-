@@ -6,7 +6,7 @@ A modern, fully customizable web application to create professional digital inst
 This project is fully frontend-based (HTML, CSS, JS) and responsive for all devices.
 
 ## Live Demo
-site is live at https://muzamal478.github.io/digital-id-card-generator-/
+(click Here)[https://muzamal478.github.io/digital-id-card-generator-/]
 ---
 
 ## Features
